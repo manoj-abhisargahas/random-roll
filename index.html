@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Random Roll</title>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<div class="txt"><span>Random</span> Roll</div>
+		</header>
+		<div class="main">
+			<div class="boxes-container">
+				<div id="rollnum-box" class="box">
+					<div id="rollnum">0</div>
+					<input id="rollnum-btn" class="submit-button" type="submit" value="Pick Roll Number" onclick="pickRollNumber()">
+				</div>
+				<div id="task-box" class="box">
+					<div id="task"></div>
+					<input id="task-btn" class="submit-button" type="submit" value="Pick Task" onclick="pickTask()">
+				</div>
+			</div>
+			<div class="input-container">
+				<h1>Input Area:</h1>
+				<label for="start-value">
+					<span>Enter First Roll No:</span>
+					<input id="start-value" type="text" value="1" />
+				</label>
+				<label for="end-value">
+					<span>Enter Last Roll No:</span>
+					<input id="end-value" type="text" value="100" />
+				</label>
+				<label for="tasks-text">
+					<span>Enter Tasks:</span>
+					<textarea id="tasks-text" rows="10" cols="50"></textarea>
+				</label>
+			</div>
+		</div>
+		<footer>Developed by &copy; Manoj Kumar Vettigunta</footer>
+		<script src="script.js"></script>
+	</body>
+</html>

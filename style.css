@@ -1,0 +1,131 @@
+:root {
+	--our-yellow: #f2b10d;
+	--our-light-yellow: #ffc533
+}
+
+html {
+    height: 100%;
+}
+	
+body {
+	font-family: sans-serif;
+	margin: 0;
+	width: 100%;
+	position: relative;
+}
+
+header > .txt {
+    padding: 30px 20px 20px 60px;
+    font-size: 54px;
+    font-weight: 600;
+}
+
+header > .txt > span {
+	color: var(--our-yellow);
+}
+
+.main {
+	padding: 0 40px 100px;
+}
+
+.boxes-container {
+    display: flex;
+    height: max-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.boxes-container > .box {
+	flex: 1; /* Do not grow/shrink, fixed 50% width */
+	min-width: 400px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	box-sizing: border-box;
+}
+
+.input-container {
+	display: grid;
+	padding: 20px 0 0;
+	gap: 20px;
+	width: 100%;
+	max-width: 500px;
+}
+
+.input-container label {
+    display: flex;
+    gap: 10px;
+}
+
+.input-container label input,
+.input-container label textarea {
+    flex: 1;
+	padding: 4px 10px;
+	font-size: 16px;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+}
+
+.input-container label input {
+    height: 20px;
+}
+
+#rollnum,
+#task {
+	font-weight: 700;
+	background-color: #eee;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 320px;
+}
+
+
+#rollnum {
+	font-size: 240px;
+}
+
+#task {
+	font-size: 50px;
+	padding: 40px;
+	text-align: center;
+	box-sizing: border-box;
+	overflow: auto;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.submit-button {
+	cursor: pointer;
+	background-color: var(--our-light-yellow);
+	font-size: 36px;
+	font-weight: 700;
+	padding: 20px 40px;
+	border-radius: 6px;
+	box-shadow: -1px 2px 2px 0px #707070;
+	border: 0;
+	width: max-content;
+	margin: 0 auto;
+}
+
+.submit-button:active {
+	box-shadow: -1px 1px 2px 0px #9c9c9c;
+}
+
+footer {
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+    color: #888;
+    background-color: #efefef;
+    font-size: 14px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+}
